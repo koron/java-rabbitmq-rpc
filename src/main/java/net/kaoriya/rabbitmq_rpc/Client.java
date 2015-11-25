@@ -34,6 +34,8 @@ public class Client {
             }
         };
         String ctag = ch.basicConsume(Main.DIRECT_QUEUE, true, c);
+        System.out.printf("ctag: %s", ctag);
+        System.out.println();
 
         AMQP.BasicProperties props = MessageProperties.MINIMAL_BASIC.
             builder().replyTo(Main.DIRECT_QUEUE).build();
