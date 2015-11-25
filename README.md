@@ -1,7 +1,8 @@
-To start as client
-
-    $ gradle run
-
-To start as server
+First start a server.
 
     $ gradle run -Pargs="-s"
+    Server!
+
+Then start clients
+
+    $ gradle run
